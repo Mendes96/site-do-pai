@@ -266,7 +266,9 @@
   .footer-area > h4{
     height: 60px;
     color: var(--Branco);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .social-area{
     background-color: var(--colorVermelho);

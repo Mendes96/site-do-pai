@@ -249,11 +249,13 @@
     width: 75px;
     height: 75px;
     border-radius: 100%;
-
+    object-fit: contain;
+    /*
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain;*/
   }
+  /*
   .icon01{
     background-image: url("img/grupo89.png");
   }
@@ -267,6 +269,7 @@
     width: 50%;
     color: var(--Branco);
   }
+  */
   /*/////////////*/
   
   .footer-area > h4{

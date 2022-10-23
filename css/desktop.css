@@ -400,23 +400,12 @@
     width: 75px;
     height: 75px;
     border-radius: 100%;
+  }
+  .footer-items-icon > img{
+    width: 75px;
+    height: 75px;
     object-fit: contain;
-    /*
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;*/
   }
-  /*
-  .icon01{
-    background-image: url("img/grupo89.png");
-  }
-  .icon02{
-    background-image: url("img/grupo90.png");
-  }
-  .icon03{
-    background-image: url("img/grupo91.png");
-  }
-  */
   .footer-items > p{
     width: 170px;
     height: 100%;

@@ -268,12 +268,15 @@
     color: var(--Branco);
     text-align: center;
   }
+  .social-area{
+    background-color: var(--colorVermelho);
+  }
   .footer-sociais{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    background-color: var(--colorVermelho);
+    
     height: 100px;
   }
   .footer-sociais-icons{

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 769px){
   *{
     padding: 0;
     margin: 0;
@@ -131,12 +131,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 75px;
+    gap: 25px;
     
   }
   .banner > h1{
-    width: 75%;
-    font-size: 4.3em;
+    width: 60%;
+    font-size: 4em;
     font-weight: 700;
   }
   .banner > p{
@@ -396,13 +396,25 @@
     align-items: center;
     gap: 10px;
   }
-  .footer-items-icon > img{
+  .footer-items-icon{
     width: 75px;
     height: 75px;
     border-radius: 100%;
-    object-fit: contain;
-    background-color: var(--Branco);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
+  .icon01{
+    background-image: url("img/grupo89.png");
+  }
+  .icon02{
+    background-image: url("img/grupo90.png");
+  }
+  .icon03{
+    background-image: url("img/grupo91.png");
+  }
+  
   .footer-items > p{
     width: 170px;
     height: 100%;
@@ -442,8 +454,8 @@
     align-items: center;
   }
   .footer-sociais-icons > img{
-    width: 75%;
-    height: 75%;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
   }
   .autor-area{

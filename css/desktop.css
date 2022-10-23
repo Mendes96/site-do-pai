@@ -285,6 +285,7 @@
     font-weight: 400;
     color: var(--textoPreto);
     font-size: 1em;
+    border: 1px solid red;
   }
   /*////////////BOTAO PEQUENO VERMELHO///////////////*/
   .btn-Pequeno-Vermelho{

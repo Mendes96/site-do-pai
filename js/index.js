@@ -49,3 +49,6 @@ function btProjeto(){
 function btSobre(){
   fechado()
 }
+function btOrcamento(){
+  fechado()
+}

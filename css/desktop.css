@@ -49,7 +49,8 @@
     justify-content: center;
     align-items: center;
   }
-  .caixa-de-itens-header{
+  .caixa-de-itens-header{display: none;}
+  .caixa-de-itens-header-desktop{
     width: 60%;
     height: 100%;
     display: flex;
@@ -57,11 +58,11 @@
     justify-content: space-evenly;
     list-style: none;
   }
-  .caixa-de-itens-header > li{
+  .caixa-de-itens-header-desktop > li{
     width: 20%;
     height: 100%;
   }
-  .caixa-de-itens-header > li > a{
+  .caixa-de-itens-header-desktop > li > a{
     height: 100%;
     width: 100%;
     color: var(--Branco);
@@ -73,21 +74,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    pointer-events: auto;
   }
-  .caixa-de-itens-header > li > a:hover{
+  .caixa-de-itens-header-deaktop > li > a:hover{
     background-color: var(--hoverRed);
   }
-  .caixa-de-itens-header > li > #destaque{
+  .caixa-de-itens-header-desktop > li > #destaque{
     background-color: var(--Branco);
     color: var(--colorVermelho);
   }
-  .caixa-de-itens-header > li > #destaque:hover{
+  .caixa-de-itens-header-desktop > li > #destaque:hover{
     background-color: var(--hoverWhite);
   }
   /*////////////////////////////////////////////////////////////*/
 
 
-  /*////////////////////////////ESQUELETO////////////////////////*/
+  /*/////ESQUELETO///////////*/
   .container{
     width: 100%;
     padding: 25px 10%;

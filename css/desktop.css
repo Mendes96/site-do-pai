@@ -36,6 +36,9 @@
     top: 0 auto;
     left: 0 auto;
   }
+  .menuBurguer{
+    display: none;
+  }
 
   .logo-Header{
     height: 100%;
@@ -284,8 +287,7 @@
     text-align: center;
     font-weight: 400;
     color: var(--textoPreto);
-    font-size: 1em;
-    border: 1px solid red;
+    font-size: 0.9em;
   }
   /*////////////BOTAO PEQUENO VERMELHO///////////////*/
   .btn-Pequeno-Vermelho{
@@ -361,7 +363,7 @@
     object-fit: contain;
     position: relative;
   }
-  /*////////////////////////FOOTER/////////////////////////*/
+  /*//////FOOTER/////////*/
   .final{
     height: 100%;
     background-color: var(--textoPreto);
@@ -452,8 +454,10 @@
   }
   .autor-area{
     color: var(--Branco);
-    text-align: center;
-    height: 30px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   /*FIM DO CODE*/
 }

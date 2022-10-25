@@ -73,6 +73,7 @@
     background-color: var(--Branco);
     list-style: none;
   }
+  .caixa-de-itens-header-desktop{display: none;}
   .caixa-de-itens-header{
     background-color: var(--colorVermelho);
     list-style: none;

@@ -232,7 +232,7 @@
   }
   .galeria{
     margin-top: 25px;
-    width: 100%;
+    width: 100vw;
     height: 320px;
     padding: 0 5px;
     display: grid;

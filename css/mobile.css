@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@media screen and (max-width: 768px){
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+  }
+  html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+  }
+  :root{
+    /*PALETA DE CORES*/
+    --colorFundo: rgb(170, 170, 170);
+    --colorVermelho: rgb(180, 0, 0);
+    --Branco: rgb(230, 230, 230);
+    --textoPreto: rgb(30, 30, 30);
+    --hoverWhite: rgb(200, 200, 200);
+    --hoverRed: rgb( 150, 0, 0);
+    --boxShadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  /*Esqueleto*/
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .conteudo{
+    max-width: 600px;
+  }
+  h2{
+    font-size: 1.8em;
+    color: var(--textoPreto);
+    margin-top: 30px;
+  }
+  /*//////////////////*/
+  header{
+    height: 60px;
+    background-color: var(--colorVermelho);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .logo-Header{
+    color: var(--Branco);
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .menuBurguer{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  .menuBurguer > div{
+    width: 30px;
+    height: 3px;
+    background-color: var(--Branco);
+    list-style: none;
+  }
+  .itens-header-desktop{display: none}
+  .caixa-de-itens-header{
+    background-color: var(--colorVermelho);
+    list-style: none;
+    color: var(--Branco);
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 60px;
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-auto-rows: 25px;
+    grid-gap: 20px;
+    justify-items: center;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .caixa-de-itens-header > li{
+    grid-column: span 1;
+    grid-row: span 2;
+    width: 300px;
+    border-bottom: 2px solid var(--Branco);
+    text-align: center;
+  }
+  .caixa-de-itens-header > li > a{
+    color: var(--Branco);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  /*//////Banner Principal///////*/
+  .banner-principal{
+    height: 90vh;
+    width: 100vw;
+    background-image: url("img/bgMobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .banner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .banner > h1{
+    color: var(--Branco);
+    font-size: 2.7em;
+    width: 100%;
+  }
+  .banner > p{
+    color: var(--Branco);
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 90%;
+  }
+  
+  .btn-Solicitar-Branco{
+    width: 250px;
+    height: 40px;
+    background-color: var(--Branco);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    color: var(--colorVermelho);
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: var(--boxShadow);
+  }
+  .whatsApp-logo{
+    width: 35px;
+    height: 35px;
+    background-image: url("img/icon-whatsApp.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  /*//////////*/
+  .experiencia-itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    margin-top: 30px;
+  }
+  .experiencia h3{
+    font-size: 1.5em;
+    color: var(--textoPreto);
+  }
+  .experiencia-icons > img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  /*////////////*/
+  .bg2{
+    height: 400px;
+    background-color: var(--colorVermelho);
+  }
+  
+  /*//////////////*/
+  .servico-itens{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    text-align: center;
+  }
+  .servico-icons > img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  /*//////////*/
+  .btn-Pequeno-Vermelho{
+    height: 35px;
+    width: 200px;
+    background-color: var(--colorVermelho);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: var(--boxShadow);
+    color: var(--Branco);
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .whatsApp-icon3{
+    width: 15px;
+    height: 15px;
+    background-image: url("img/whatsapp48.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  /*///////////*/
+  #project{
+   height: 100%;
+  }
+  .galeria{
+    margin-top: 25px;
+    width: 100%;
+    height: 310px;
+    display: grid;
+    grid-auto-columns: 300px;
+    grid-auto-rows: 300px;
+    grid-gap: 10px;
+    justify-content: center;
+    overflow-x: scroll;
+    background-color: var(--colorFundo);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  .item-galeria{
+    grid-column: span 1;
+    grid-row: span 1;
+    padding: 10px 0;
+  }
+  .item-galeria > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /*//////////*/
+  #aboutUs{
+    height: 500px;
+    background-color: var(--colorVermelho);
+    color: var(--Branco);
+    margin-top: 20px;
+  }
+  #aboutUs h2{
+    color: var(--Branco);
+  }
+  .sobreNos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+  /*/////////////*/
+  footer{
+    background-color: var(--textoPreto);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  .logo-area{
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-logo > img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  /*////////////////*/
+  .footer-items{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer-items-icon{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+  }
+  .footer-items-icon > img{
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+  }
+ 
+  .footer-items > p{
+    width: 50%;
+    color: var(--Branco);
+  }
+  
+  /*/////////////*/
+  
+  .footer-area > h4{
+    height: 60px;
+    color: var(--Branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-area{
+    background-color: var(--colorVermelho);
+  }
+  .footer-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+    height: 100px;
+  }
+  .footer-sociais-icons{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: var(--textoPreto);
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-sociais-icons > img{
+    width: 30px;
+    height: 30px;
+  }
+  /*///////////*/
+  .autor-area{
+    text-align: center;
+    color: var(--Branco);
+  }
+  /*Fim do Code*/
+}
